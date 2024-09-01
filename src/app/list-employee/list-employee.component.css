@@ -1,0 +1,18 @@
+.btn{
+    padding: 2px 7px; /* Adjust padding as needed */
+    font-size: 13px;  /* Adjust font size as needed */
+    line-height: 2.8;
+    width: 60px;
+}
+
+.input{
+    padding-left: 700px;
+    float: right;
+ 
+ }
+
+ .custom-btn {
+    width: 100px;  /* Set the desired width */
+    height: 10px;  /* Set the desired height */
+    font-size: 16px;  /* Set the font size */
+  }

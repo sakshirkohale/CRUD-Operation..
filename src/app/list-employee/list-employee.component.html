@@ -1,0 +1,46 @@
+
+<!-- <div>
+    <input type="number" [(ngModel)]="searchById" placeholder="Search by ID" />
+    <button (click)="onSearch()">Search</button>
+  </div> -->
+
+
+<div class="input">
+    <input clas="input1" type="number" [(ngModel)]="searchById" placeholder="Search by ID" />
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="onSearch()"> Search</button></div>  
+
+
+
+<div class="table-container">
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Salary</th>
+        <th>Action</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.designation}}</td>
+        <td>{{employee.salary}}</td>
+        <td>
+            <button class="btn" (click)="updateEmployee(employee.id)" class="btn btn-info">Update</button>&nbsp;
+            <button class="btn" (click)="deleteEmployee(employee.id)"class="btn btn-danger">Delete</button>&nbsp;
+            <button class="btn" (click)="viewemployee(employee.id)"class="btn btn-primary">View</button>&nbsp;
+
+           
+        </td>
+    </tr>
+</tbody>
+
+
+</table>
+</div>
+

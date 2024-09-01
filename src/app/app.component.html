@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Employee</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/employees']">employee </a>
+      </li>
+      
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/addemployee']">Add </a>
+        </li>
+  
+      </ul>
+
+       
+ 
+      <!-- <input class="form-control custom-width mr-sm   ml-auto" type="search" placeholder="Search" aria-label="Search" >
+   &nbsp;   <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Search</button> -->
+
+</div>
+</nav>
+  
+  
+  <br><h3 class="text-center">Full Stack Project</h3>
+  <div class="container">
+<router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All rigts are Reserved 2024</span>
+  </div>
+</footer>
